@@ -1,5 +1,5 @@
 {
-	"icon": "c-stdlib",
+	"icon": "function",
 	"snippet": "$$(%{0})",
 	"items": [
 		"assert",
