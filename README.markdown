@@ -1,5 +1,7 @@
 # Chocolat Code Completion Support
 
+*We're on `##chocolatapp` on [irc.freenode.net](http://webchat.freenode.net/?channels=%23%23chocolatapp) if you want to help out.*
+
 There's three prongs to Chocolat's code completion:
 
 1. Word completion: words that are found in the current document. This happens when you press `esc`.
