@@ -12,23 +12,20 @@ Here's how it works:
 
 ### Structure
 
-Each language gets its own directory. In that the directory are:
-
-1. JSON files holding *curated* completions (for example, CSS property names have to be manually curated).
-2. Ruby/Python scripts, that perform some kind of processing, and print out JSON files to stdout (for example, extracting PHP function names out of its XML documentation).
-
-Languages may have two subdirectories:
-
-1. **support**: Holds resources that *should* be commited into the repo, and that scripts can expect to exist.
-2. **tmp**: To be used to store resources that shouldn't be commited into the repo. For example, resources that can be downloaded online by the script, but you don't want to download *each* time.
+Each language gets its own directory (the name of the directory is a scope). Each directory contains one or more .json files for each separate group of completions (eg `js/functions.json`, `js/constants.json`).
 
 ### JSON format
 
 Each JSON file is an object literal, with the following keys:
-
-...
-
-The *items* key is an array of strings and/or object literals. In the case of strings, it simply holds the
+    
+    [required]
+    items: An array of strings corresponding
+    
+    [optional]
+    selector: A scope selector 
+    type: function/class/type/method/constant/etc
+    icon: usually the same as 'type'
+    prototypes: A parallel array of prototype declarations. If 'prototypes' is given, there must be one value in the array for each value in 'items'.
 
 ### Compiling
 
