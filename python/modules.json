@@ -1,7 +1,7 @@
 {
-  icon: "namespace",
-  prefix: "import",
-  items: [
+  "icon": "namespace",
+  "prefix": "import",
+  "items": [
     "__builtin__",
     "__future__",
     "__main__",
