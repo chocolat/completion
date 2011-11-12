@@ -25,9 +25,9 @@ end
 
 # do the stupid classes...
 the_classes_h = {}
-the_classes_h['icon'] 		= "class"
-the_classes_h['snippet'] 	= "$$%{0}"
-the_classes_h['items'] 		= the_classes
+the_classes_h['icon']    = "class"
+the_classes_h['snippet'] = "$$%{0}"
+the_classes_h['items']   = the_classes
 	
 File.open('classes.json', 'w') do |f1|
 	f1.puts the_classes_h.to_json
@@ -35,9 +35,9 @@ end
 
 # do the stupid classes...
 the_functions_h = {}
-the_functions_h['icon'] 		= "class"
-the_functions_h['snippet'] 	= "$$%{0}"
-the_functions_h['items'] 		= the_functions
+the_functions_h['icon']    = "class"
+the_functions_h['snippet'] = "$$%{0}"
+the_functions_h['items']   = the_functions
 
 File.open('functions.json', 'w') do |f2|
 	f2.puts the_functions_h.to_json
