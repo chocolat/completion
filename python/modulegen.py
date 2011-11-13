@@ -1,34 +1,34 @@
 import inspect
 modulenames = [
     "__builtin__",
-    "__future__",
+    # "__future__",
     "__main__",
-    "_winreg",
-    "abc",
-    "aifc",
-    "anydbm",
-    "argparse",
-    "array",
-    "ast",
-    "asynchat",
-    "asyncore",
-    "atexit",
-    "audioop",
-    "base64",
-    "BaseHTTPServer",
-    "bdb",
-    "binascii",
-    "binhex",
-    "bisect",
-    "bsddb",
-    "bz2",
-    "calendar",
-    "cgi",
-    "CGIHTTPServer",
-    "cgitb",
-    "chunk",
-    "cmath",
-    "cmd",
+    "_winreg", # 469
+    "abc", # 128
+    "aifc", # 58
+    "anydbm", # 228
+    "argparse", # 2363
+    "array", # 220
+    "ast", # 40 
+    "asynchat", # 220
+    "asyncore", # 3500
+    "atexit", # 420
+    #"audioop", # 54
+    "base64", # 4000
+    "BaseHTTPServer", # 1066
+    "bdb", # 119
+    "binascii", # 2900
+    "binhex", # 25
+    "bisect", # 1200
+    "bsddb", # 388
+    "bz2", # 931
+    "calendar", # 240
+    "cgi", # 12900
+    #"CGIHTTPServer", # 87
+    "cgitb", # 1580
+    "chunk", # 70
+    "cmath", # 160
+    "cmd", # 320
     "code",
     "codecs",
     "codeop",
@@ -46,7 +46,7 @@ modulenames = [
     "cPickle",
     "cProfile",
     "crypt",
-    "cStringIO",
+    "cStringIO", # 6900
     "csv",
     "ctypes",
     "curses",
@@ -60,52 +60,52 @@ modulenames = [
     "difflib",
     "dis",
     "distutils",
-    "distutils.archive_util",
-    "distutils.bcppcompiler",
-    "distutils.ccompiler",
-    "distutils.cmd",
-    "distutils.command",
-    "distutils.command.bdist",
-    "distutils.command.bdist_dumb",
-    "distutils.command.bdist_msi",
-    "distutils.command.bdist_packager",
-    "distutils.command.bdist_rpm",
-    "distutils.command.bdist_wininst",
-    "distutils.command.build",
-    "distutils.command.build_clib",
-    "distutils.command.build_ext",
-    "distutils.command.build_py",
-    "distutils.command.build_scripts",
-    "distutils.command.check",
-    "distutils.command.clean",
-    "distutils.command.config",
-    "distutils.command.install",
-    "distutils.command.install_data",
-    "distutils.command.install_headers",
-    "distutils.command.install_lib",
-    "distutils.command.install_scripts",
-    "distutils.command.register",
-    "distutils.command.sdist",
-    "distutils.core",
-    "distutils.cygwinccompiler",
-    "distutils.debug",
-    "distutils.dep_util",
-    "distutils.dir_util",
-    "distutils.dist",
-    "distutils.emxccompiler",
-    "distutils.errors",
-    "distutils.extension",
-    "distutils.fancy_getopt",
-    "distutils.file_util",
-    "distutils.filelist",
-    "distutils.log",
-    "distutils.msvccompiler",
-    "distutils.spawn",
-    "distutils.sysconfig",
-    "distutils.text_file",
-    "distutils.unixccompiler",
-    "distutils.util",
-    "distutils.version",
+    # "distutils.archive_util",
+    # "distutils.bcppcompiler",
+    # "distutils.ccompiler",
+    # "distutils.cmd",
+    # "distutils.command",
+    # "distutils.command.bdist",
+    # "distutils.command.bdist_dumb",
+    # "distutils.command.bdist_msi",
+    # "distutils.command.bdist_packager",
+    # "distutils.command.bdist_rpm",
+    # "distutils.command.bdist_wininst",
+    # "distutils.command.build",
+    # "distutils.command.build_clib",
+    # "distutils.command.build_ext",
+    # "distutils.command.build_py",
+    # "distutils.command.build_scripts",
+    # "distutils.command.check",
+    # "distutils.command.clean",
+    # "distutils.command.config",
+    # "distutils.command.install",
+    # "distutils.command.install_data",
+    # "distutils.command.install_headers",
+    # "distutils.command.install_lib",
+    # "distutils.command.install_scripts",
+    # "distutils.command.register",
+    # "distutils.command.sdist",
+    # "distutils.core",
+    # "distutils.cygwinccompiler",
+    # "distutils.debug",
+    # "distutils.dep_util",
+    # "distutils.dir_util",
+    # "distutils.dist",
+    # "distutils.emxccompiler",
+    # "distutils.errors",
+    # "distutils.extension",
+    # "distutils.fancy_getopt",
+    # "distutils.file_util",
+    # "distutils.filelist",
+    # "distutils.log",
+    # "distutils.msvccompiler",
+    # "distutils.spawn",
+    # "distutils.sysconfig",
+    # "distutils.text_file",
+    # "distutils.unixccompiler",
+    # "distutils.util",
+    # "distutils.version",
     "doctest",
     "DocXMLRPCServer",
     "dumbdbm",
@@ -178,7 +178,7 @@ modulenames = [
     "MiniAEFrame",
     "mmap",
     "modulefinder",
-    "msilib",
+    # "msilib",
     "msvcrt",
     "multiprocessing",
     "multiprocessing.connection",
@@ -214,12 +214,12 @@ modulenames = [
     "pydoc",
     "Queue",
     "quopri",
-    "random",
-    "re",
-    "readline",
-    "repr",
-    "resource",
-    "rlcompleter",
+    "random", # 6500
+    "re", # 140
+    "readline", # 440
+    "repr", # 50
+    "resource", # 100
+    "rlcompleter", 
     "robotparser",
     "runpy",
     "sched",
@@ -308,7 +308,8 @@ modulenames = [
     "xmlrpclib",
     "zipfile",
     "zipimport",
-    "zlib"]
+    "zlib" # 2,551
+    ]
 
 nn = []
 funcs = []
@@ -331,13 +332,16 @@ for m in modulenames:
                 if inspect.isfunction(o):
                     funcs.append(v)
                 elif inspect.ismethod(o):
-                    methods.append(v)
+                    funcs.append(v)
                 elif inspect.isclass(o):
                     classes.append(v)
                     for vv in dir(o):
                         if vv.startswith("_"):
                             continue
-                        if inspect.ismethod(getattr(o, vv)):
+                        currentObject = getattr(o, vv)
+                        if inspect.isfunction(currentObject):
+                            methods.append(vv)
+                        elif inspect.ismethod(currentObject):
                             methods.append(vv)
                 elif inspect.ismodule(o):
                     modules.append(v)
