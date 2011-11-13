@@ -1,6 +1,7 @@
 {
 	"icon": "html-attributes",
 	"snippet": "$$=\"%{0}\"",
+	"selector":"html.attribute-name",
 	"items": [
 		"abbr",
 		"accept",

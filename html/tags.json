@@ -1,6 +1,7 @@
 {
 	"icon": "html-tag",
 	"snippet": "<$$>%{0}</$$>",
+	"selector":"html.tag",
 	"items": [
 		"!DOCTYPE",
 		"a",
