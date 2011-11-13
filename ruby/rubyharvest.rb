@@ -13,7 +13,6 @@ end
 CORE = CORE.map {|x| x.gsub(/^C|M/,"") }
 
 struct = {}
-struct['snippet'] = "$$%{0}"
 
 struct['icon']  = 'class'
 struct['items'] = CORE + STDLIB
