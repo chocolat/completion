@@ -809,8 +809,6 @@
     "is_alive", 
     "is_blocked", 
     "is_canonical", 
-    "is_cgi", 
-    "is_executable", 
     "is_expired", 
     "is_finite", 
     "is_infinite", 
@@ -819,7 +817,6 @@
     "is_normal", 
     "is_not_allowed", 
     "is_package", 
-    "is_python", 
     "is_qnan", 
     "is_rpc_path_valid", 
     "is_signed", 
@@ -1307,7 +1304,6 @@
     "run", 
     "runTest", 
     "runTests", 
-    "run_cgi", 
     "runcall", 
     "runcode", 
     "runctx", 
@@ -1846,5 +1842,6 @@
     "yview_scroll", 
     "zfill", 
     "zoom"
-  ]
+  ], 
+  "prefix": "."
 }

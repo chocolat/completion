@@ -6,7 +6,7 @@ import json
 from StringIO import StringIO
 amalg = "{\n\n"
 
-from subprocess import subprocess
+import subprocess
 
 # Run the scripts
 print("Generating Python")

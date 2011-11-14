@@ -59,7 +59,6 @@
     "BytesIO", 
     "BytesWarning", 
     "CDLL", 
-    "CGIHTTPRequestHandler", 
     "CGIXMLRPCRequestHandler", 
     "CObjView", 
     "Calendar", 
