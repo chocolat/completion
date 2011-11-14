@@ -6,6 +6,16 @@ import json
 from StringIO import StringIO
 amalg = "{\n\n"
 
+from subprocess import subprocess
+
+# Run the scripts
+print("Generating Python")
+subprocess.call("cd python && python modulegen.py", shell=True)
+
+print("Generating Ruby")
+subprocess.call("cd ruby && ruby rubyharvest.rb", shell=True)
+
+
 # 1. Read all the files in languages/
 amalgs = []
 

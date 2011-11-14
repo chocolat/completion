@@ -20,6 +20,7 @@ struct['items'] = CORE + STDLIB
 write 'classes', struct
 
 struct['icon']  = 'method'
+struct['prefix']  = '.'
 struct['items'] = CORE+STDLIB.map(&:methods).flatten.sort.uniq
 
 write 'methods', struct

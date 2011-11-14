@@ -359,6 +359,9 @@ def dumpto(t, oo):
         'icon': t,
         'items': oo,
     }
+    if t == 'method':
+        ooo['prefix'] = '.'
+    
     f = open("generated_" + t + ".json", "w+")
     f.write(json.dumps(ooo, sort_keys=True, indent=2))
     f.close()
