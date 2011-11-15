@@ -10,18 +10,18 @@ def write name , data
   end
 end
 
-CORE = CORE.map {|x| x.gsub(/^C|M/,"") }
+CORE = CORE.map {|x| x.gsub(/^(C|M)/,"") }
 
 struct = {}
 
 struct['icon']  = 'class'
-struct['items'] = CORE + STDLIB
+struct['items'] = CORE # (CORE + STDLIB)
 
 write 'classes', struct
 
 struct['icon']  = 'method'
 struct['prefix']  = '.'
-struct['items'] = CORE+STDLIB.map(&:methods).flatten.sort.uniq
+struct['items'] = CORE.map(&:methods).flatten.sort.uniq # CORE+STDLIB.map(&:methods).flatten.sort.uniq
 
 write 'methods', struct
 
