@@ -35,7 +35,7 @@ end
 
 # do the stupid classes...
 the_functions_h = {}
-the_functions_h['icon']    = "class"
+the_functions_h['icon']    = "function"
 the_functions_h['snippet'] = "$$%{0}"
 the_functions_h['items']   = the_functions
 
