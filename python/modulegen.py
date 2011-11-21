@@ -643,11 +643,12 @@ for m in modulenames:
     try:
         mm = __import__(m)
         #nn.extend(dir(mm))
-        
+        ismatchable = False
         if m not in ["__builtin__", "math"]:
             mp = m + "."
         else:
             mp = ""
+            ismatchable = True
         
         for v in dir(mm):
             if v.startswith("_"):
@@ -657,12 +658,12 @@ for m in modulenames:
             d = inspect.getdoc(o)
             if d:
                 # print("%s -- %o %o %o %o" % (v, inspect.ismethod(o), inspect.isfunction(o), inspect.isroutine(o), inspect.isbuiltin(o) ))
-                if inspect.isfunction(o) or inspect.isroutine(o):
+                if ismatchable and (inspect.isfunction(o) or inspect.isroutine(o)):
                     funcs.append(mp+v)
-                elif inspect.ismethod(o):
+                elif ismatchable and inspect.ismethod(o):
                     funcs.append(mp+v)
                 elif inspect.isclass(o):
-                    classes.append(mp+v)
+                    if ismatchable: classes.append(mp+v)
                     for vv in dir(o):
                         if vv.startswith("_"):
                             continue
