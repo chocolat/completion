@@ -2,6 +2,8 @@
 	"icon": "html-tag",
 	"snippet": "<$$>%{0}</$$>",
 	"selector":"html.tag",
+        "prefix": "<",
+        "confident": "yes",
 	"items": [
 		"!DOCTYPE",
 		"a",
