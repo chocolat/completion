@@ -117,7 +117,7 @@
         , "insertRule"
         , "isFinite"
         , "isNaN"
-        , 'isPrototypeOf"
+        , "isPrototypeOf"
         , "italics"
         , "item"
         , "join"
