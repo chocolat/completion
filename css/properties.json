@@ -1,6 +1,7 @@
 {
 	"icon": "css-properties",
 	"snippet": "$$: %{0};",
+	"confident": "yes",
 	"items": [
 		"alignment-adjust",
 		"alignment-baseline",
